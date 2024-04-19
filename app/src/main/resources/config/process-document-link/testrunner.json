@@ -1,0 +1,7 @@
+[
+  {
+    "processDefinitionKey": "test-runner-process",
+    "canInitializeDocument": true,
+    "startableByUser": false
+  }
+]

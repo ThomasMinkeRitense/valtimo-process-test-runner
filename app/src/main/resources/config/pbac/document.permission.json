@@ -1,0 +1,32 @@
+{
+    "changesetId": "documents-v1",
+    "permissions": [
+        {
+            "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+            "action": "view_list",
+            "roleKey": "ROLE_USER",
+            "conditions": [
+            ]
+        },
+        {
+            "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+            "action": "view",
+            "roleKey": "ROLE_USER",
+            "conditions": [
+            ]
+        },
+        {
+            "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+            "action": "view",
+            "roleKey": "ROLE_USER",
+            "conditions": [
+                {
+                    "type": "field",
+                    "field": "assigneeId",
+                    "operator": "==",
+                    "value": "${currentUserId}"
+                }
+            ]
+        }
+    ]
+}
