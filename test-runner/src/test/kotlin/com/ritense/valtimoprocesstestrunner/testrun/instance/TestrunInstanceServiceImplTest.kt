@@ -8,6 +8,8 @@ import com.ritense.processlink.service.ProcessLinkActivityService
 import com.ritense.processlink.web.rest.dto.ProcessLinkActivityResult
 import com.ritense.valtimo.camunda.domain.CamundaProcessDefinition
 import com.ritense.valtimo.camunda.service.CamundaRepositoryService
+import com.ritense.valtimoprocesstestrunner.interaction.definition.TestrunInteractionDefinitionService
+import com.ritense.valtimoprocesstestrunner.interaction.instance.TestrunInteractionInstanceService
 import com.ritense.valtimoprocesstestrunner.testrun.definition.TestrunDefinition
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeEach
@@ -26,6 +28,8 @@ class TestrunInstanceServiceImplTest {
     @Mock lateinit var formSubmissionService: FormSubmissionService
     @Mock lateinit var camundaRepositoryService: CamundaRepositoryService
     @Mock lateinit var processLinkActivityService: ProcessLinkActivityService
+    @Mock lateinit var testrunInteractionDefinitionService: TestrunInteractionDefinitionService
+    @Mock lateinit var testrunInteractionInstanceService: TestrunInteractionInstanceService
 
     var objectMapper: ObjectMapper = ObjectMapper();
 
@@ -40,7 +44,9 @@ class TestrunInstanceServiceImplTest {
             instanceRepository = testrunInstanceRepository,
             formSubmissionService = formSubmissionService,
             camundaRepositoryService = camundaRepositoryService,
-            processLinkActivityService = processLinkActivityService
+            processLinkActivityService = processLinkActivityService,
+            testrunInteractionDefinitionService = testrunInteractionDefinitionService,
+            testrunInteractionInstanceService = testrunInteractionInstanceService
         )
     }
 

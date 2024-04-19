@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "3.1.7"
+    id("org.springframework.boot") version "3.1.7" apply false
     kotlin("jvm") version "1.9.23"
     kotlin("plugin.spring") version "1.9.23"
     kotlin("plugin.jpa") version "1.9.23"
@@ -32,6 +32,7 @@ dependencies {
     implementation("com.ritense.valtimo:local-mail")
 
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework:spring-context")
     implementation("org.springframework.security:spring-security-config")
     implementation("org.springframework.security:spring-security-web")
 

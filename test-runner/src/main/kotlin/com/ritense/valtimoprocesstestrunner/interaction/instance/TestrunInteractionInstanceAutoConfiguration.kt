@@ -22,7 +22,7 @@ class TestrunInteractionInstanceAutoConfiguration {
     ): TestrunInteractionInstanceServiceImpl {
         return TestrunInteractionInstanceServiceImpl(
             commandService = testrunCommandService,
-            repository = testrunInteractionInstanceRepository,
+            testrunInteractionInstanceRepository = testrunInteractionInstanceRepository,
             mapperService = testrunMapperService,
             testrunInstanceRepository = testrunInstanceRepository
         )

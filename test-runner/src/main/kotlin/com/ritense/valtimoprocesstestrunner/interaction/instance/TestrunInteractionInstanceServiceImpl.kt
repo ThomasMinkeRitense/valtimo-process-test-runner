@@ -10,13 +10,13 @@ import mu.KotlinLogging
 
 class TestrunInteractionInstanceServiceImpl(
     private val commandService: TestrunCommandService,
-    private val repository: TestrunInteractionInstanceRepository,
+    private val testrunInteractionInstanceRepository: TestrunInteractionInstanceRepository,
     private val testrunInstanceRepository: TestrunInstanceRepository,
     private val mapperService: TestrunMapperService
 ): TestrunInteractionInstanceService {
     override fun handleEvent(event: TestrunEvent) {
         testrunInstanceRepository.findByDocumentId(event.documentId).ifPresent {
-            val testrunInteractionInstance = repository
+            val testrunInteractionInstance = testrunInteractionInstanceRepository
                 .findAllByTestrunInstance(it)
                 .firstOrNull {it.eventDefinition.equals(event.eventDefinition())}
 
@@ -34,7 +34,7 @@ class TestrunInteractionInstanceServiceImpl(
     }
 
     override fun createInteractionInstance(interactionInstance: TestrunInteractionInstance) {
-        repository.save(interactionInstance)
+        testrunInteractionInstanceRepository.save(interactionInstance)
     }
 
     private fun dispatchCommand(command: TestrunCommand): Any {
