@@ -28,6 +28,7 @@ subprojects {
 		maven(URI("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
 	}
 
+	apply(plugin = "java")
 	apply(plugin = "maven-publish")
 	configure<PublishingExtension> {
 		repositories {
