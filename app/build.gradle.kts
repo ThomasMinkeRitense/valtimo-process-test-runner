@@ -12,8 +12,6 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://repo.ritense.com/repository/maven-public/") }
-    maven { url = uri("https://repo.ritense.com/repository/maven-snapshot/") }
 }
 
 dependencies {

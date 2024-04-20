@@ -12,8 +12,6 @@ version = "0.0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://repo.ritense.com/repository/maven-public/") }
-    maven { url = uri("https://repo.ritense.com/repository/maven-snapshot/") }
 }
 
 tasks.withType<KotlinCompile> {
