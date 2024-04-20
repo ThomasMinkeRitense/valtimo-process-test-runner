@@ -34,3 +34,14 @@ tasks.withType<KotlinCompile> {
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
+
+tasks.getByName<Jar>("jar") {
+    enabled = false
+}
+
+tasks.withType<PublishToMavenRepository>().configureEach {
+    enabled = false
+}
+tasks.withType<PublishToMavenLocal>().configureEach {
+    enabled = false
+}
