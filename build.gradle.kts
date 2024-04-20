@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.net.URI
 
 plugins {
 	id("java-library")
@@ -17,6 +18,7 @@ java {
 
 repositories {
 	mavenCentral()
+	maven(URI("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
 }
 
 subprojects {
