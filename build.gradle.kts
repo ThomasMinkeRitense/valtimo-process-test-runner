@@ -36,8 +36,8 @@ subprojects {
 				name = "GitHubPackages"
 				url = uri("https://maven.pkg.github.com/ThomasMinkeRitense/valtimo-process-test-runner")
 				credentials {
-					username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-					password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+					username = System.getenv("GITHUB_ACTOR")
+					password = System.getenv("GITHUB_TOKEN")
 				}
 			}
 		}
