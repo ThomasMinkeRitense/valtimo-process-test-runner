@@ -7,7 +7,7 @@ plugins {
     kotlin("plugin.jpa") version "1.9.23"
 }
 
-group = "com.ritense"
+group = "com.ritense.valtimo"
 version = "0.0.1-SNAPSHOT"
 
 repositories {

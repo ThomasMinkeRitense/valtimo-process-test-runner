@@ -7,7 +7,7 @@ plugins {
     kotlin("plugin.spring") version "1.9.23"
 }
 
-group = "com.ritense"
+group = "com.ritense.valtimo"
 version = "1.0-SNAPSHOT"
 
 repositories {
