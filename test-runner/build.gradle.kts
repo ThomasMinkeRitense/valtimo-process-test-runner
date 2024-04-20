@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "com.ritense.valtimo"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1-JAVA-17-SNAPSHOT"
 
 repositories {
     mavenCentral()
