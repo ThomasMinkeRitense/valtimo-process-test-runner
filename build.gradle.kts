@@ -10,7 +10,7 @@ plugins {
 	`maven-publish`
 }
 
-group = "com.ritense"
+group = "com.ritense.valtimo"
 version = "0.0.1-SNAPSHOT"
 
 java {
