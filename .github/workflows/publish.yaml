@@ -23,11 +23,10 @@ jobs:
         with:
           gradle-version: 8.5
           arguments: build
-      -   name: Gradle publish Snapshot to Github
-          uses: gradle/gradle-build-action@v3
-          with:
-            gradle-version: 8.5
-            arguments: publishDefaultPublicationToGitHubPackagesRepository
-          env:
-            USER: ${{ secrets.USER }}
-            TOKEN: ${{ secrets.TOKEN }}
+      - name: Gradle publish Snapshot to Github
+        uses: gradle/gradle-build-action@v3
+        with:
+          gradle-version: 8.5
+          arguments: publishDefaultPublicationToGitHubPackagesRepository
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
