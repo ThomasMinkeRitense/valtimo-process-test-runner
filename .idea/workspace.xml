@@ -4,96 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a70c337-8c59-408e-939e-268659d919cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/ritense/valtimoprocesstestrunner/ValtimoProcessTestRunnerApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/config/document/definition/testrunner.schema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/config/form/task-form.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/config/pbac/all.role.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/config/pbac/document.permission.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/config/pbac/task.permission.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/config/process-document-link/testrunner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/config/processlink/test-runner-process.processlink.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/autoconfiguration/TestrunAutoconfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/command/TestrunCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/command/TestrunCommandAutoConfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/command/TestrunCommandDefinition.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/command/TestrunCommandHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/command/TestrunCommandObjectMapperConfigurer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/command/TestrunCommandService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/completetask/CompleteTask.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/completetask/CompleteTaskCommandDefinition.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/completetask/CompleteTaskCommandHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/completetask/scheduledtaskcompletion/ScheduledTaskCompletion.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/completetask/scheduledtaskcompletion/ScheduledTaskCompletionAutoConfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/completetask/scheduledtaskcompletion/ScheduledTaskCompletionRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/completetask/scheduledtaskcompletion/ScheduledTaskCompletionService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/event/TaskCreated.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/event/TaskCreatedEventDefinition.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/event/TaskCreatedEventListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/event/TestrunEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/event/TestrunEventAutoConfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/event/TestrunEventDefinition.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/event/TestrunEventObjectMapperConfigurer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/definition/TestrunInteractionDefinition.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/definition/TestrunInteractionDefinitionAutoConfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/definition/TestrunInteractionDefinitionDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/definition/TestrunInteractionDefinitionRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/definition/TestrunInteractionDefinitionResource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/definition/TestrunInteractionDefinitionSecurityConfigurer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/definition/TestrunInteractionDefinitionService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/definition/TestrunInteractionDefinitionServiceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/instance/TestrunInteractionInstance.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/instance/TestrunInteractionInstanceAutoConfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/instance/TestrunInteractionInstanceRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/instance/TestrunInteractionInstanceService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/interaction/instance/TestrunInteractionInstanceServiceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/mapper/EventCommandMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/mapper/TaskCreatedCompleteTaskMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/mapper/TestrunMapperAutoConfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/mapper/TestrunMapperService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/definition/TestrunDefinition.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/definition/TestrunDefinitionAutoConfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/definition/TestrunDefinitionDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/definition/TestrunDefinitionRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/definition/TestrunDefinitionResource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/definition/TestrunDefinitionSecurityConfigurer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/definition/TestrunDefinitionService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/definition/TestrunDefinitionServiceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/instance/TestrunInstance.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/instance/TestrunInstanceAutoConfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/instance/TestrunInstanceCreated.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/instance/TestrunInstanceRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/instance/TestrunInstanceResource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/instance/TestrunInstanceSecurityConfigurer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/instance/TestrunInstanceService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/kotlin/com/ritense/valtimoprocesstestrunner/testrun/instance/TestrunInstanceServiceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/resources/config/liquibase/changelog/20240402-add-testrun-tables.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/main/resources/config/liquibase/testrun-master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/test/kotlin/com/ritense/valtimoprocesstestrunner/command/TestCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/test/kotlin/com/ritense/valtimoprocesstestrunner/command/TestCommandHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/test/kotlin/com/ritense/valtimoprocesstestrunner/command/TestrunCommandServiceTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/test/kotlin/com/ritense/valtimoprocesstestrunner/interaction/TestrunInteractionServiceTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/test/kotlin/com/ritense/valtimoprocesstestrunner/testrun/definition/TestrunDefinitionServiceImplTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-runner/src/test/kotlin/com/ritense/valtimoprocesstestrunner/testrun/instance/TestrunInstanceServiceImplTest.kt" afterDir="false" />
+    <list default="true" id="9a70c337-8c59-408e-939e-268659d919cc" name="Changes" comment="Downgrade to Java 17.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,25 +47,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="valtimo-process-test-runner" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="valtimo-process-test-runner" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="valtimo-process-test-runner" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="valtimo-process-test-runner" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -172,6 +68,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -396,11 +297,40 @@
       <workItem from="1712604383675" duration="22824000" />
       <workItem from="1712952898491" duration="13536000" />
       <workItem from="1713552395821" duration="5632000" />
+      <workItem from="1714375313583" duration="3596000" />
+      <workItem from="1715025519643" duration="607000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed package name.">
+      <created>1713644844482</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713644844482</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Downgrade to Java 17.">
+      <created>1713647215016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713647215016</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Downgrade to Java 17.">
+      <created>1713647514994</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713647514994</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed package name." />
+    <MESSAGE value="Downgrade to Java 17." />
+    <option name="LAST_COMMIT_MESSAGE" value="Downgrade to Java 17." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
