@@ -22,6 +22,9 @@
     "paths": {
       "test-runner": [
         "dist/test-runner"
+      ],
+      "@angular/*": [
+        "./node_modules/@angular/*"
       ]
     },
     "lib": [
