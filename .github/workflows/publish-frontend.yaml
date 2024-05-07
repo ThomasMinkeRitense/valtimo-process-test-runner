@@ -1,0 +1,31 @@
+name: Publish frontend to github packages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-frontend:
+      runs-on: ubuntu-latest
+      permissions:
+        contents: write
+        packages: write
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: Setup Node.js
+          uses: actions/setup-node@v2
+          with:
+            node-version: '20'
+        - name: Install dependencies
+          run: npm install
+        - name: Build
+          run: npm run build-libs
+        - name: Publish
+          run: |
+            npm config set "//npm.pkg.github.com/:_authToken" "${{ secrets.GITHUB_TOKEN }}"
+            npm config set access public
+            npm run publish-libs
+            npm config delete "//npm.pkg.github.com/:_authToken"

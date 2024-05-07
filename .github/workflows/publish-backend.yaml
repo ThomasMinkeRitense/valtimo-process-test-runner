@@ -1,4 +1,4 @@
-name: Publish to github packages
+name: Publish backend to github packages
 
 on:
   workflow_dispatch:
