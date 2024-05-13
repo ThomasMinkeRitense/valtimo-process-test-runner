@@ -1,0 +1,8 @@
+{
+  "$id": "testrunner.schema",
+  "type": "object",
+  "title": "Test runner",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {},
+  "additionalProperties": true
+}

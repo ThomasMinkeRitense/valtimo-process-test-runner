@@ -1,0 +1,3 @@
+package com.ritense.valtimoprocesstestrunner.command
+
+interface TestrunCommand

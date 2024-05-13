@@ -1,0 +1,11 @@
+{
+  "changesetId": "processinstance-v1",
+  "permissions": [
+    {
+      "resourceType": "com.ritense.valtimo.camunda.domain.CamundaExecution",
+      "action": "view",
+      "roleKey": "ROLE_USER",
+      "conditions": []
+    }
+  ]
+}

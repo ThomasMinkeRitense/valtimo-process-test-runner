@@ -1,0 +1,55 @@
+name: Publish backend to github packages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-backend:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Build with Gradle
+        uses: gradle/gradle-build-action@v3
+        with:
+          gradle-version: 8.5
+          arguments: build
+      - name: Gradle publish Snapshot to Github
+        uses: gradle/gradle-build-action@v3
+        with:
+          gradle-version: 8.5
+          arguments: publishDefaultPublicationToGitHubPackagesRepository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  build-frontend:
+      runs-on: ubuntu-latest
+      permissions:
+        contents: write
+        packages: write
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: Setup Node.js
+          uses: actions/setup-node@v2
+          with:
+            node-version: '20'
+        - name: Install dependencies
+          run: npm install
+        - name: Build
+          run: npm run build-libs
+        - name: Publish
+          run: |
+            npm config set "//npm.pkg.github.com/:_authToken" "${{ secrets.GITHUB_TOKEN }}"
+            npm config set access public
+            npm run publish-libs
+            npm config delete "//npm.pkg.github.com/:_authToken"
