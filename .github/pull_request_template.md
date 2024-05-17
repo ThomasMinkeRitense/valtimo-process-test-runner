@@ -1,9 +1,32 @@
-#### To reduce the chances of feedback on the changes and to ensure the quality of the Valtimo product, we ask you to consider the following points before creating a pull request. 
-Not every point might be relevant for your change. In that case, please check the ‘n/a’ checkbox.
+### 🛠 Changes being made
+
+Here give examples of the changes you've made in this pull request. Include an itemized list if you can. It'll help the reviewer
 
 
-|   |   |   |
-|---|---|---|
-| This contribution does not contain any breaking changes  |<ul><li> - [ ] </li></ul>|<ul><li> - [ ] </li></ul>|
-|   |   |   |
-|   |   |   |
+### ✨ What's the context?
+
+What's the context for the changes? Are there any
+
+
+### 🧠 Rationale behind the change
+
+Why did you choose to make these changes? Were there any trade-offs you had to consider? 
+
+
+### 🧪 Test plan
+
+How do you know the changes are safe to ship to production?
+
+
+### 📸 Screenshots (optional)
+
+If you made UI changes, what are the before an afters?
+
+
+### 🏎 Quality check
+
+- [ ] Are your changes following SOLID principles?
+
+- [ ] Are there any erroneous console logs, debuggers or leftover code in your changes?
+
+- [ ] Walk away, take a break, re-read what you filled out above does it make sense if you were coming in cold? What extra context could you provide?
