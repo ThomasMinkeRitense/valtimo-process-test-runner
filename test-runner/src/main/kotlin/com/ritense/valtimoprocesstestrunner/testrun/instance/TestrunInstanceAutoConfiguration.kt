@@ -5,7 +5,9 @@ import com.ritense.processlink.service.ProcessLinkActivityService
 import com.ritense.valtimo.camunda.service.CamundaRepositoryService
 import com.ritense.valtimoprocesstestrunner.interaction.definition.TestrunInteractionDefinitionService
 import com.ritense.valtimoprocesstestrunner.interaction.instance.TestrunInteractionInstanceService
+import com.ritense.valtimoprocesstestrunner.testrun.definition.TestrunDefinitionResource
 import com.ritense.valtimoprocesstestrunner.testrun.definition.TestrunDefinitionSecurityConfigurer
+import com.ritense.valtimoprocesstestrunner.testrun.definition.TestrunDefinitionService
 import org.springframework.boot.autoconfigure.AutoConfiguration
 import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.context.annotation.Bean

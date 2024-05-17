@@ -23,6 +23,7 @@ class TestrunInteractionDefinitionServiceImpl(
         val definition = testrunDefinitionService.getDefinition(definitionId)
 
         val testrunInteractionDefinition = TestrunInteractionDefinition(
+            title = testrunInteractionDefinitionDto.title,
             testrunDefinition = definition,
             commandDefinition = objectMapper.treeToValue(testrunInteractionDefinitionDto.commandDefinition, TestrunCommandDefinition::class.java),
             eventDefinition = objectMapper.treeToValue(testrunInteractionDefinitionDto.eventDefinition, TestrunEventDefinition::class.java)

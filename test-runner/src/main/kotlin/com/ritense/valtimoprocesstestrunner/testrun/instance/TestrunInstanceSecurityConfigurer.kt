@@ -14,6 +14,7 @@ class TestrunInstanceSecurityConfigurer : HttpSecurityConfigurer {
             http.authorizeHttpRequests { requests ->
                 requests
                     .requestMatchers(antMatcher(HttpMethod.POST, "/api/management/v1/test-run/definition/{definitionId}/start")).hasAuthority(ADMIN)
+                    .requestMatchers(antMatcher(HttpMethod.GET, "/api/management/v1/test-run/definition/{definitionId}/instance")).hasAuthority(ADMIN)
             }
         } catch (e: Exception) {
             throw HttpConfigurerConfigurationException(e)

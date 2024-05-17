@@ -22,6 +22,9 @@ open class TestrunInteractionDefinition(
     @Column(name = "id")
     val id: UUID = UUID.randomUUID(),
 
+    @Column(name = "title", nullable = false)
+    val title: String,
+
     @ManyToOne
     @JoinColumn(name = "testrun_definition_id", referencedColumnName = "id")
     val testrunDefinition: TestrunDefinition,
@@ -39,6 +42,7 @@ open class TestrunInteractionDefinition(
     fun toDto(): TestrunInteractionDefinitionDto {
         val objectMapper = ObjectMapper()
         return TestrunInteractionDefinitionDto(
+            title = this.title,
             eventDefinition = objectMapper.valueToTree(this.eventDefinition),
             commandDefinition = objectMapper.valueToTree(this.commandDefinition)
         )

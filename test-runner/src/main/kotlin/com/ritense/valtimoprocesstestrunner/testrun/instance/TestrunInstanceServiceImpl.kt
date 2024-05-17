@@ -45,7 +45,11 @@ class TestrunInstanceServiceImpl(
         return instanceRepository.findByDocumentId(documentId)
     }
 
-    private fun copyInteractionsToInstance(testrunInstance: TestrunInstance) {
+  override fun getByDefinition(definition: TestrunDefinition): List<TestrunInstance> {
+        return instanceRepository.findByDefinition(definition)
+  }
+
+  private fun copyInteractionsToInstance(testrunInstance: TestrunInstance) {
         val interactionDefinitions: List<TestrunInteractionDefinition> = testrunInteractionDefinitionService.getInteractionDefinitionsByTestrunDefinition(testrunInstance.definition.id)
         interactionDefinitions
             .forEach({

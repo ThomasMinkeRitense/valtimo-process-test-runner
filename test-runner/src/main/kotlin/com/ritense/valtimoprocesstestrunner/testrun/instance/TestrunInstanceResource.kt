@@ -3,6 +3,7 @@ package com.ritense.valtimoprocesstestrunner.testrun.instance
 import com.ritense.authorization.annotation.RunWithoutAuthorization
 import com.ritense.valtimo.contract.annotation.SkipComponentScan
 import com.ritense.valtimoprocesstestrunner.testrun.definition.TestrunDefinitionService
+import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping

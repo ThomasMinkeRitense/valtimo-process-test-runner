@@ -64,6 +64,10 @@
                 <constraints primaryKey="true" primaryKeyName="testrun_interaction_definition_idPK"/>
             </column>
 
+            <column name="title" type="VARCHAR(256)">
+              <constraints nullable="false"/>
+            </column>
+
             <column name="testrun_definition_id" type="${uuidType}">
                 <constraints nullable="false"/>
             </column>

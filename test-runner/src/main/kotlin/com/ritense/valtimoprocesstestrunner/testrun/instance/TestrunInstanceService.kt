@@ -8,4 +8,6 @@ interface TestrunInstanceService {
     fun startTestrun(definition: TestrunDefinition): TestrunInstance
 
     fun getByDocumentId(documentId: UUID): Optional<TestrunInstance>
+
+    fun getByDefinition(definition: TestrunDefinition): List<TestrunInstance>
 }

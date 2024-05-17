@@ -41,4 +41,10 @@ class TestrunDefinitionResource(
         val testrunDefinition = service.getDefinition(definitionId)
         return instanceService.startTestrun(testrunDefinition)
     }
+
+    @GetMapping("/{definitionId}/instance")
+    fun getInstancesForDefinition(@PathVariable definitionId: UUID): List<TestrunInstance> {
+      val testrunDefinition = service.getDefinition(definitionId)
+      return instanceService.getByDefinition(testrunDefinition)
+    }
 }
