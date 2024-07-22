@@ -50,7 +50,7 @@ class TestrunInstanceServiceImpl(
   }
 
   private fun copyInteractionsToInstance(testrunInstance: TestrunInstance) {
-        val interactionDefinitions: List<TestrunInteractionDefinition> = testrunInteractionDefinitionService.getInteractionDefinitionsByTestrunDefinition(testrunInstance.definition.id)
+        val interactionDefinitions: List<TestrunInteractionDefinition> = testrunInteractionDefinitionService.getInteractionDefinitionsByTestrunDefinition(testrunInstance.definition)
         interactionDefinitions
             .forEach({
                 val testrunInteractionInstance = TestrunInteractionInstance(

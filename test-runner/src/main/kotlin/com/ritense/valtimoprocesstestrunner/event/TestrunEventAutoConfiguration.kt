@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean
 class TestrunEventAutoConfiguration {
     @Bean
     fun taskCreatedEventDefinitionType(): NamedType {
-        return NamedType(TaskCreatedEventDefinition::class.java, "taskCreated")
+        return NamedType(TaskCreatedEventDefinition::class.java, "TaskCreatedEventDefinition")
     }
 
     @Bean

@@ -1,1 +1,34 @@
-<p>testrun-definition-list works!</p>
+<valtimo-carbon-list
+  [header]="false"
+  [items]="testrunDefinitions | async"
+  [fields]="fields"
+  [actionItems]="actionItems"
+  [loading]="loading$ | async"
+  [showSelectionColumn]="true"
+  (rowClicked)="onRowClick($event)"
+>
+
+  <ng-container header> {{ 'accessControl.roles.title' | translate }} </ng-container>
+
+  <div carbonToolbarContent>
+    <ng-container [ngTemplateOutlet]="addDefinitionButton"></ng-container>
+  </div>
+
+  <valtimo-no-results
+    description="{{ 'accessControl.roles.noResults.description' | translate }}"
+    title="{{ 'accessControl.roles.noResults.title' | translate }}"
+  ></valtimo-no-results>
+</valtimo-carbon-list>
+
+<testrun-definition-metadata-modal
+  [open]="showAddModal$ | async"
+  (closeEvent)="onAdd($event)"
+></testrun-definition-metadata-modal>
+
+<ng-template #addDefinitionButton>
+  <button cdsButton="primary" (click)="openAddModal()">
+    {{ 'interface.add' | translate }}
+
+    <svg class="cds--btn__icon" cdsIcon="add" size="16"></svg>
+  </button>
+</ng-template>

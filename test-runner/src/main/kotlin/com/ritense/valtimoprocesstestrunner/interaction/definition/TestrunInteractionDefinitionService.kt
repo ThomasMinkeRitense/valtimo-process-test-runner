@@ -1,9 +1,9 @@
 package com.ritense.valtimoprocesstestrunner.interaction.definition
 
-import java.util.UUID
+import com.ritense.valtimoprocesstestrunner.testrun.definition.TestrunDefinition
 
 interface TestrunInteractionDefinitionService {
-    fun getInteractionDefinitionsByTestrunDefinition(testrunDefinitionId: UUID): List<TestrunInteractionDefinition>
+    fun getInteractionDefinitionsByTestrunDefinition(definition: TestrunDefinition): List<TestrunInteractionDefinition>
 
-    fun createInteractionDefinition(definitionId: UUID, testrunInteractionDefinitionDto: TestrunInteractionDefinitionDto): TestrunInteractionDefinition
+    fun createOrUpdateInteractionDefinition(definition: TestrunDefinition, testrunInteractionDefinitionDto: TestrunInteractionDefinitionDto): TestrunInteractionDefinition
 }

@@ -11,4 +11,10 @@ data class TaskCreated(
     override fun eventDefinition(): TestrunEventDefinition {
         return TaskCreatedEventDefinition(taskDefinitionKey)
     }
+
+  companion object {
+    fun readableName(): String {
+      return "Task created"
+    }
+  }
 }

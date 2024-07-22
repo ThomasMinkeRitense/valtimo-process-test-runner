@@ -15,7 +15,7 @@
     "activityId": "userTask2",
     "activityType": "bpmn:UserTask:create",
     "processLinkType": "form",
-    "formDefinitionName": "task-form"
+    "formDefinitionName": "question"
   },
   {
     "activityId": "userTask3",
@@ -25,6 +25,18 @@
   },
   {
     "activityId": "userTask4",
+    "activityType": "bpmn:UserTask:create",
+    "processLinkType": "form",
+    "formDefinitionName": "task-form"
+  },
+  {
+    "activityId": "userTask5",
+    "activityType": "bpmn:UserTask:create",
+    "processLinkType": "form",
+    "formDefinitionName": "task-form"
+  },
+  {
+    "activityId": "userTask6",
     "activityType": "bpmn:UserTask:create",
     "processLinkType": "form",
     "formDefinitionName": "task-form"

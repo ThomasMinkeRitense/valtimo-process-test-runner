@@ -1,5 +1,6 @@
 package com.ritense.valtimoprocesstestrunner.testrun.definition
 
+import com.ritense.valtimoprocesstestrunner.interaction.definition.TestrunInteractionDefinitionService
 import com.ritense.valtimoprocesstestrunner.testrun.instance.TestrunInstanceService
 import org.springframework.boot.autoconfigure.AutoConfiguration
 import org.springframework.boot.autoconfigure.domain.EntityScan
@@ -13,9 +14,13 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 class TestrunDefinitionAutoConfiguration {
     @Bean
     fun testrunDefinitionService(
-        testrunDefinitionRepository: TestrunDefinitionRepository
+        testrunDefinitionRepository: TestrunDefinitionRepository,
+        testrunInteractionDefinitionService: TestrunInteractionDefinitionService
     ): TestrunDefinitionService {
-        return TestrunDefinitionServiceImpl(testrunDefinitionRepository)
+        return TestrunDefinitionServiceImpl(
+          testrunDefinitionRepository,
+          testrunInteractionDefinitionService
+        )
     }
 
     @Bean

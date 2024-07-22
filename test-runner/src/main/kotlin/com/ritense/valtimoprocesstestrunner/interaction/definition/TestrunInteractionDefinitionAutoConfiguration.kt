@@ -17,27 +17,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 class TestrunInteractionDefinitionAutoConfiguration {
     @Bean
     fun testrunInteractionDefinitionService(
-        testrunDefinitionService: TestrunDefinitionService,
         testrunInteractionDefinitionRepository: TestrunInteractionDefinitionRepository,
         objectMapper: ObjectMapper
     ): TestrunInteractionDefinitionService {
         return TestrunInteractionDefinitionServiceImpl(
-            testrunDefinitionService = testrunDefinitionService,
             repository = testrunInteractionDefinitionRepository,
             objectMapper = objectMapper
         )
-    }
-
-    @Bean
-    fun testrunInteractionDefinitionResource(
-        testrunInteractionDefinitionService: TestrunInteractionDefinitionService
-    ): TestrunInteractionDefinitionResource {
-        return TestrunInteractionDefinitionResource(testrunInteractionDefinitionService)
-    }
-
-    @Bean
-    @Order(300)
-    fun testrunInteractionDefinitionSecurityConfigurer(): TestrunInteractionDefinitionSecurityConfigurer {
-        return TestrunInteractionDefinitionSecurityConfigurer()
     }
 }

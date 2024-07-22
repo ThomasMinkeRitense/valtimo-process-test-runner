@@ -22,3 +22,9 @@ camunda:
     generic-properties:
       properties:
         enforceHistoryTimeToLive: false
+keycloak:
+  realm: valtimo
+  auth-server-url: http://localhost:8081/auth
+  resource: valtimo-user-m2m-client
+  credentials:
+    secret: 6ef6ca16-6b86-482a-a3d9-0561704c1db9

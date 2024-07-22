@@ -2,6 +2,7 @@ package com.ritense.valtimoprocesstestrunner.testrun.definition
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.databind.JsonNode
+import com.ritense.valtimoprocesstestrunner.interaction.definition.TestrunInteractionDefinitionDto
 import java.util.UUID
 
 data class TestrunDefinitionDto(
@@ -13,16 +14,8 @@ data class TestrunDefinitionDto(
 
     @JsonProperty("document_definition_name")
     val documentDefinitionName: String,
-    val payload: JsonNode
-) {
-    companion object {
-        fun toEntity(testrunDefinitionDto: TestrunDefinitionDto): TestrunDefinition {
-            return TestrunDefinition(
-                title = testrunDefinitionDto.title,
-                documentDefinitionName = testrunDefinitionDto.documentDefinitionName,
-                processDefinitionKey = testrunDefinitionDto.processDefinitionKey,
-                payload = testrunDefinitionDto.payload
-            )
-        }
-    }
-}
+
+    val payload: JsonNode,
+
+    val interactions: List<TestrunInteractionDefinitionDto> = emptyList()
+)

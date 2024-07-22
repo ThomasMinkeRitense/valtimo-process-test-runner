@@ -14,7 +14,9 @@ class TestrunDefinitionSecurityConfigurer : HttpSecurityConfigurer {
             http.authorizeHttpRequests { requests ->
                 requests
                     .requestMatchers(antMatcher(HttpMethod.GET, "/api/management/v1/test-run/definition")).hasAuthority(ADMIN)
+                    .requestMatchers(antMatcher(HttpMethod.GET, "/api/management/v1/test-run/definition/{definitionId}")).hasAuthority(ADMIN)
                     .requestMatchers(antMatcher(HttpMethod.POST, "/api/management/v1/test-run/definition")).hasAuthority(ADMIN)
+                    .requestMatchers(antMatcher(HttpMethod.PUT, "/api/management/v1/test-run/definition")).hasAuthority(ADMIN)
             }
         } catch (e: Exception) {
             throw HttpConfigurerConfigurationException(e)

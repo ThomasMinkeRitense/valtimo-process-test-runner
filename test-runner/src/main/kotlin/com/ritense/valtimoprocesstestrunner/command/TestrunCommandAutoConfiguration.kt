@@ -30,7 +30,7 @@ class TestrunCommandAutoConfiguration {
 
     @Bean
     fun completeTaskCommandDefinitionType(): NamedType {
-        return NamedType(CompleteTaskCommandDefinition::class.java, "completeTask")
+        return NamedType(CompleteTaskCommandDefinition::class.java, "CompleteTaskCommandDefinition")
     }
 
     @Bean

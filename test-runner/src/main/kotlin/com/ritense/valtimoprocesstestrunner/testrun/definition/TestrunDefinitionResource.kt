@@ -7,6 +7,7 @@ import com.ritense.valtimoprocesstestrunner.testrun.instance.TestrunInstanceServ
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.PutMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
@@ -30,9 +31,19 @@ class TestrunDefinitionResource(
             .toList()
     }
 
+    @GetMapping("/{definitionId}")
+    fun getDefinitionWithInteractions(@PathVariable definitionId: UUID): TestrunDefinitionDto {
+      return service.getDefinition(definitionId).toDto()
+    }
+
     @PostMapping
     fun createDefinition(@RequestBody testrunDefinitionDto: TestrunDefinitionDto): TestrunDefinitionDto {
         return service.createTestrunDefinition(testrunDefinitionDto).toDto()
+    }
+
+    @PutMapping
+    fun updateDefinition(@RequestBody testrunDefinitionDto: TestrunDefinitionDto): TestrunDefinitionDto {
+        return service.updateTestrunDefinition(testrunDefinitionDto).toDto()
     }
 
     @RunWithoutAuthorization

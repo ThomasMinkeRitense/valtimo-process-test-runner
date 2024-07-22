@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Router, RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [];
 
@@ -7,4 +7,14 @@ const routes: Routes = [];
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+  constructor(
+    private router: Router,
+  ) {
+    // errorHandler on error route to home
+    this.router.errorHandler = () => {
+      this.router.navigate(['']);
+    };
+  }
+}

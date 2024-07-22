@@ -2,10 +2,13 @@ package com.ritense.valtimoprocesstestrunner.testrun.definition
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.databind.JsonNode
+import com.ritense.valtimoprocesstestrunner.interaction.definition.TestrunInteractionDefinition
 import io.hypersistence.utils.hibernate.type.json.JsonType
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
+import jakarta.persistence.FetchType
 import jakarta.persistence.Id
+import jakarta.persistence.OneToMany
 import jakarta.persistence.Table
 import org.hibernate.annotations.Type
 import java.util.*
@@ -30,7 +33,10 @@ open class TestrunDefinition(
 
     @Type(value = JsonType::class)
     @Column(name = "payload", columnDefinition = "json")
-    val payload: JsonNode
+    val payload: JsonNode,
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "testrunDefinition")
+    var interactions: MutableList<TestrunInteractionDefinition> = mutableListOf()
 ) {
     fun toDto(): TestrunDefinitionDto {
         return TestrunDefinitionDto(
@@ -38,7 +44,8 @@ open class TestrunDefinition(
             title = this.title,
             documentDefinitionName = this.documentDefinitionName,
             processDefinitionKey = this.processDefinitionKey,
-            payload = this.payload
+            payload = this.payload,
+            interactions = this.interactions.map { it.toDto() }
         )
     }
 

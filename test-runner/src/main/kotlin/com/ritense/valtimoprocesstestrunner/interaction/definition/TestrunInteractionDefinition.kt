@@ -42,6 +42,7 @@ open class TestrunInteractionDefinition(
     fun toDto(): TestrunInteractionDefinitionDto {
         val objectMapper = ObjectMapper()
         return TestrunInteractionDefinitionDto(
+            id = this.id,
             title = this.title,
             eventDefinition = objectMapper.valueToTree(this.eventDefinition),
             commandDefinition = objectMapper.valueToTree(this.commandDefinition)

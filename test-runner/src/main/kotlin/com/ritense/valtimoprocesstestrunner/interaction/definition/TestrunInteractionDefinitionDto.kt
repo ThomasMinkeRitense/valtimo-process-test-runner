@@ -7,6 +7,9 @@ import java.util.UUID
 
 data class TestrunInteractionDefinitionDto(
     @JsonProperty
+    val id: UUID?,
+
+    @JsonProperty
     val title: String,
 
     @JsonProperty("event_definition")
