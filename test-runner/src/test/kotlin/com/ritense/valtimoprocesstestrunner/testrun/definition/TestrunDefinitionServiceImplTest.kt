@@ -1,6 +1,7 @@
 package com.ritense.valtimoprocesstestrunner.testrun.definition
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import com.ritense.valtimoprocesstestrunner.interaction.definition.TestrunInteractionDefinitionService
 import com.ritense.valtimoprocesstestrunner.testrun.instance.TestrunInstanceServiceImpl
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
@@ -16,6 +17,9 @@ class TestrunDefinitionServiceImplTest {
     @Mock
     lateinit var testrunDefinitionRepository: TestrunDefinitionRepository
 
+    @Mock
+    lateinit var testrunInteractionDefinitionService: TestrunInteractionDefinitionService
+
     var objectMapper: ObjectMapper = ObjectMapper();
 
     var processDefinitionKey = "testrun-process"
@@ -26,7 +30,8 @@ class TestrunDefinitionServiceImplTest {
     fun init() {
         MockitoAnnotations.openMocks(this)
         service = TestrunDefinitionServiceImpl(
-            definitionRepository = testrunDefinitionRepository
+            definitionRepository = testrunDefinitionRepository,
+            testrunInteractionDefinitionService = testrunInteractionDefinitionService
         )
     }
     @Test
