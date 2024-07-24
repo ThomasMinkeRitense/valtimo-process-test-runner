@@ -53,3 +53,9 @@ jobs:
             npm config set access public
             npm run publish-libs
             npm config delete "//npm.pkg.github.com/:_authToken"
+        - name: Archive npm failure logs
+          uses: actions/upload-artifact@v2
+          if: failure()
+          with:
+            name: npm-logs
+            path: ~/.npm/_logs
